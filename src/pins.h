@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
-#define READ_WRITE PB8
-#define CLK_INTR PB9
+#define READ_WRITE PB10
+#define CLK_INTR PB11
 
 #define ADDR_LEN 16
 #define DATA_LEN 8
@@ -23,21 +23,21 @@ int ADDR[ADDR_LEN] = {
     PB6,
     PB7,
     //A12-A15
-    PA3,
-    PA2,
     PA1,
     PA0,
+    PC15,
+    PC14,
 };
 
 int DATA[DATA_LEN] = {
     //D0-D3
-    PB11,
-    PB10,
     PB1,
     PB0,
-    //D4-D7
     PA7,
     PA6,
+
+    //D4-D7
     PA5,
     PA4,
-};
+    PA3,
+    PA2};
