@@ -6,38 +6,38 @@
 #define ADDR_LEN 16
 #define DATA_LEN 8
 
+int DATA[DATA_LEN] = {
+    //D7-D4
+    PA2,
+    PA3,
+    PA4,
+    PA5,
+    //D3-D0
+    PA6,
+    PA7,
+    PB0,
+    PB1,
+};
+
 int ADDR[ADDR_LEN] = {
-    //A0-A3
-    PB12,
-    PB13,
-    PB14,
-    PB15,
-    //A4-A7
-    PA11,
-    PA12,
-    PA15,
-    PB3,
-    //A8-A11
-    PB4,
-    PB5,
-    PB6,
-    PB7,
-    //A12-A15
+    //A15-A12
     PA1,
     PA0,
     PC15,
     PC14,
+    //A11-A18
+    PB7,
+    PB6,
+    PB5,
+    PB4,
+    //A7-A4
+    PB3,
+    PA15,
+    PA12,
+    PA11,
+    //A3-A0
+    PB15,
+    PB14,
+    PB13,
+    PB12,
 };
-
-int DATA[DATA_LEN] = {
-    //D0-D3
-    PB1,
-    PB0,
-    PA7,
-    PA6,
-
-    //D4-D7
-    PA5,
-    PA4,
-    PA3,
-    PA2};

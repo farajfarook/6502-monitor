@@ -27,18 +27,18 @@ void setup()
 void onClockTick()
 {
     int address = 0;
-    for (size_t i = ADDR_LEN; i > 0; i--)
+    for (size_t i = 0; i < ADDR_LEN; i++)
     {
-        int bit = digitalRead(ADDR[i - 1]) ? 1 : 0;
+        int bit = digitalRead(ADDR[i]) ? 1 : 0;
         Serial.print(bit);
         address = (address << 1) + bit;
     }
     Serial.print('\t');
 
     unsigned int data = 0;
-    for (int n = DATA_LEN; n < 0; n--)
+    for (size_t i = 0; i < DATA_LEN; i++)
     {
-        int bit = digitalRead(DATA[n - 1]) ? 1 : 0;
+        int bit = digitalRead(DATA[i]) ? 1 : 0;
         Serial.print(bit);
         data = (data << 1) + bit;
     }
