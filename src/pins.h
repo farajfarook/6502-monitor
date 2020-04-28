@@ -25,7 +25,7 @@ int ADDR[ADDR_LEN] = {
     PA0,
     PC15,
     PC14,
-    //A11-A18
+    //A11-A8
     PB7,
     PB6,
     PB5,
